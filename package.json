@@ -36,6 +36,8 @@
     "karma-viewport": "^1.0.8"
   },
   "dependencies": {
-    "karma-firefox-launcher": "^2.1.1"
+    "-": "0.0.1",
+    "karma-firefox-launcher": "^2.1.1",
+    "npm": "^7.21.0"
   }
 }
