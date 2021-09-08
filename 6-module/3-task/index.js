@@ -21,24 +21,24 @@ export default class Carousel {
         </div>
       </div>
     `);
-
+   
     let arrowRight = carousel.querySelector('.carousel__arrow_right');
     let arrowLeft = carousel.querySelector('.carousel__arrow_left');
 
-    this.hideArrow(this.slideCount, arrowRight, arrowLeft, this.slides.lenght);
+    this.hideArrow(this.slideCount, arrowRight, arrowLeft, this.slides.length);
 
     arrowRight.addEventListener('click', () => {
       let carouselInner = carousel.querySelector('.carousel__inner');
       this.slideCount++;
       carouselInner.style.transform = `translateX(-${carouselInner.offsetWidth * this.slideCount}px)`;
-      this.hideArrow(this.slideCount, arrowRight, arrowLeft, this.slides.lenght);
+      this.hideArrow(this.slideCount, arrowRight, arrowLeft, this.slides.length);
     });
 
     arrowLeft.addEventListener('click', () => {
       let carouselInner = carousel.querySelector('.carousel__inner');
       this.slideCount--;
       carouselInner.style.transform = `translateX(-${carouselInner.offsetWidth * this.slideCount}px)`;
-      this.hideArrow(this.slideCount, arrowRight, arrowLeft, this.slides.lenght);
+      this.hideArrow(this.slideCount, arrowRight, arrowLeft, this.slides.length);
     });
 
     let buttonAdd = carousel.querySelectorAll('.carousel__button');
